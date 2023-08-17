@@ -27,11 +27,9 @@ require_once("header.php");?>
                     //Verifica se o valor de $cod é 171
                     if ($cod == '171') {
                         //Se for exibe a mensagem de usuário ou senha invalidos.
-                        echo('<div class="d-grid">');
-                            echo('<div class="alert alert-danger">');
-                            echo('Usuário ou senha inválidos!');
-                            echo('</div>');
-                        echo('</div>');
+                        echo("<div class='error'>");
+                        echo("<p class='warning-error'</p>");
+                        echo("</div>");
                     }
                 }
             }

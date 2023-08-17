@@ -6,7 +6,7 @@ if ($_GET) {
     $email = $_GET['email'];
     $senha = $_GET['senha'];
     
-    if ($email == 'a@a' && $senha == 'as') {
+    if ($email == 'admin' && $senha == 'admin') {
         
         //Cria a sessão "login"
         session_start();

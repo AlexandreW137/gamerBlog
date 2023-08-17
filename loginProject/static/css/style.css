@@ -1,7 +1,6 @@
 body {
-    background-color: #07080C !important;
-    background-image: url("../../img/bodybackground.png");
-
+    background-color: #151515 !important;
+   
 }
 
 header {
@@ -14,6 +13,16 @@ header {
 
 }
 
+header .logo h1 {
+  color: #A5A5A6;
+}
+
+header a {
+  text-decoration: none;
+}
+.header-border {
+  border-bottom: 0.0625rem solid #ffe200;
+}
 header img {
     width: 80px;
     margin: 10px;
@@ -33,6 +42,7 @@ header nav ul {
 
 nav ul li {
     margin: 30px;
+    margin-top: 50px;
     list-style: none;
     text-transform: uppercase;
 }
@@ -132,6 +142,7 @@ main:hover {
   .conteudo {
 display: flex;
 flex-wrap: wrap;
+z-index: 9999;
 }
 
   .conteudo article {
@@ -139,4 +150,46 @@ flex-wrap: wrap;
     margin-top: 50px;
     width: fit-content;
     margin: 50px;
+    z-index: 9998;
+
   }
+
+  .warning-error {
+    color: white;
+  }
+
+  .conteudo-about h1{
+    color:white;
+  }
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+svg {
+  margin-right: 10px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+.conteudo h1 {
+  color: purple;
+}
+
+.background-text {
+  position: absolute;
+  top: 20%;
+}
+
+.background-text h1 {
+  color: white;
+  font-size: 130px;
+  border-bottom: #ffe200 5px solid;
+  padding-bottom: 11px;
+}
+.relative-background {
+  position: relative;
+}
