@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/cdn.datatables.net_1.13.4_css_jquery,.css">
+    <link rel="stylesheet" href="blog.css">
 </head>
 <body>
 

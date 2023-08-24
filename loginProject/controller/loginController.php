@@ -10,7 +10,7 @@ if ($_GET) {
         
         //Cria a sessão "login"
         session_start();
-        $_SESSION['login'] = 'a@a';
+        $_SESSION['login'] = $email;
         
         //Se o usuário e senha estiver correta 
         //redireciona para a home.
