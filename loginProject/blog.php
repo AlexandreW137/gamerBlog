@@ -1,14 +1,16 @@
 <?php
 require_once("header.php");
+require_once("controller/autenticationController.php");
+
 
 ?>
 <style>
   .container-main {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 50px 80px 0 80px;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 3fr;
     gap: 20px;
     background-color: #1a1a1a;
     color: #ffffff;
@@ -64,7 +66,7 @@ require_once("header.php");
 </style>
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
 <div class="container-main">
   <div class="column popular">
     <h2>POPULAR NOW</h2>
@@ -90,20 +92,7 @@ require_once("header.php");
       <button class="read-more-button">Read More</button>
     </div>
   </div>
-  <div class="column news">
-    <h2>NEWS</h2>
-    <div class="article-content">
-      <img src="news-image.jpg" alt="News Image">
-      <h3>News Title</h3>
-      <p>Short news description...</p>
-    </div>
-    <div class="article-content">
-      <img src="news-image.jpg" alt="News Image">
-      <h3>Another News Title</h3>
-      <p>Another short news description...</p>
-    </div>
-  </div>
-  </div>
-  </div>
+ 
+ 
 </body>
 </html>
