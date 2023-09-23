@@ -1,5 +1,5 @@
 <?php 
-require_once("header.php");
+require_once("shared/header.php");
 ?>
 
 <div class="container">
@@ -41,5 +41,5 @@ require_once("header.php");
 </div>
 
 <?php
-require_once("footer.php");
+require_once("shared/footer.php");
 ?>

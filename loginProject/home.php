@@ -37,3 +37,7 @@ require_once("controller/autenticationController.php")
 
   setInterval(trocarPalavra, tempoDeTroca);
 </script>
+
+<?php
+require_once("shared/footer.php");
+?>

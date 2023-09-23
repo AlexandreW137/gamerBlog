@@ -90,3 +90,7 @@ require_once("arrays/blogArray.php");?>
 
 
 
+
+<?php
+require_once("shared/footer.php");
+?>

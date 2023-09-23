@@ -54,8 +54,6 @@ require_once("controller/autenticationController.php");
     </div>
     </form>
 
-
-
-<?php 
-require_once("footer.php");
+    <?php
+require_once("shared/footer.php");
 ?>
