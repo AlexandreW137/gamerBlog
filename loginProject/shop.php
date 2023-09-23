@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 <?php
-require_once("header.php");
+require_once("shared/header.php");
 require_once("controller/autenticationController.php");
-require_once("shopArray.php");
+require_once("arrays/shopArray.php");
 
 ?>
 
@@ -80,36 +79,3 @@ foreach ($products as $product) {
     }
   }
 </style>
-=======
-
-<?php 
-require_once("header.php");
-require_once("controller/autenticationController.php");
-?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php 
-require_once("footer.php");
-
-
-?>
->>>>>>> 3cfa888d502b66542fa1cf0f038d3562bb664e45

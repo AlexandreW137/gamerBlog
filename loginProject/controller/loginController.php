@@ -3,14 +3,14 @@
 if ($_GET) {
     //echo('funcionou....');
     //print_r($_GET);
-    $email = $_GET['email'];
+    $usuario = $_GET['usuario'];
     $senha = $_GET['senha'];
     
-    if ($email == 'admin' && $senha == 'admin') {
+    if ($usuario == 'admin' && $senha == 'admin') {
         
         //Cria a sessão "login"
         session_start();
-        $_SESSION['login'] = 'admin';
+        $_SESSION['login'] = 'usuario';
         
         //Se o usuário e senha estiver correta 
         //redireciona para a home.
