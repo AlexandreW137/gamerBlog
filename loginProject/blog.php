@@ -1,98 +1,92 @@
 <?php
 require_once("header.php");
 require_once("controller/autenticationController.php");
+require_once("blogArray.php");?>
 
-
-?>
 <style>
-  .container-main {
-    font-family: Arial, sans-serif;
-    margin: 50px 80px 0 80px;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 20px;
-    background-color: #1a1a1a;
-    color: #ffffff;
-  }
+  .mainBlog {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
 
-  .column {
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #2b2b2b;
+.post {
+    flex: 1; 
+    margin: 20px;
+    text-align: justify;
+    max-width: 400px; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.post img {
+    width: 100%;
+    max-height: 200px; 
+    object-fit: cover; 
+}
+
+.post h2 {
+    font-size: 20px;
+}
+
+.post p {
+    font-size: 16px;
+    flex-grow: 1; 
+    margin: 10px;
     
-  }
+}
 
-  .popular {
-    grid-column: 1 / 2;
-    border-right: 1px dotted #ffe10054;
-    
-  }
-  .popular h2 {
-    margin: 30px;
-    text-align: left;
-    border-top: 1px solid red;
-    font-size: 22px;
-    padding: 8px;
-    
-  }
-
-  .article {
-    grid-column: 2 / 3;
-  }
-
-  .article-content img {
-    width:260px;
-    height: 160px;
+.post a {
+    color: white;
+    text-decoration: none;
     text-align: center;
-  }
-
-  .news {
-    grid-column: 3 / 4;
-  }
-
-  .article-content {
-    margin-bottom: 20px;
-  }
-
-  .read-more-button {
-    background-color: #e74c3c;
-    color: #ffffff;
+    background-color: #EFDE57;
     border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
+    color: white;
+    padding: 10px 60px;
+    font-size: 16px;
+    margin-top: 10px;
     cursor: pointer;
-  }
+}
+
+.post a span {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .post {
+        flex: 1;
+        margin: 10px;
+        max-width: none; 
+    }
+    .post img {
+        max-height: none; 
+    }
+}
+
+
+
 </style>
-</head>
-<body>
-<div class="container-fluid">
-<div class="container-main">
-  <div class="column popular">
-    <h2>POPULAR NOW</h2>
-    <div class="article-content">
-      <img src="blogImages/aiArticle.jpg" alt="Popular Image">
-      <h3>Inteligência Artificial</h3>
-      <p>Short description of the article.</p>
-      <p>Date: August 24, 2023</p>
-    </div>
-    <div class="article-content">
-      <img src="popular-image.jpg" alt="Popular Image">
-      <h3>Another Title</h3>
-      <p>Another short description.</p>
-      <p>Date: August 25, 2023</p>
-    </div>
-  </div>
-  <div class="column article">
-    <h2>ARTICLE</h2>
-    <div class="article-content">
-      <img src="article-image.jpg" alt="Article Image">
-      <h3>Featured Article Title</h3>
-      <p>Introduction to the featured article...</p>
-      <button class="read-more-button">Read More</button>
-    </div>
-  </div>
- 
- 
-</body>
-</html>
+
+
+
+<div class="mainBlog">
+    <?php foreach ($posts as $post) { ?>
+        <div class="post">
+            <h2><?php echo $post['titulo']; ?></h2>
+            <img src="<?php echo $post['imagem']; ?>" alt="Imagem de <?php echo $post['titulo']; ?>">
+            <p><?php echo $post['descricao']; ?></p>
+            <a href="<?php echo $post['link']; ?>"><span>Ler mais</span></a>
+        </div>
+    <?php } ?>
+
+
+</div>
+
+
+

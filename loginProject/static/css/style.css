@@ -99,16 +99,17 @@ main:hover {
     
   }
   
-  button {
-    background-color: #ce8600;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 3px;
-    cursor: pointer;
-    width: 100%;
-  }
-
+ .loginButton {
+  background-color: #ffd20b;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+ }
   .login-container {
     padding: 20px; 
     margin-top: -100px;

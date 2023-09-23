@@ -16,7 +16,7 @@ require_once("header.php");
         <label for="senha">Senha:</label>
         <input type="password" id="senha" name="senha" required>
       </div>
-      <button type="submit">Entrar</button>
+      <button type="submit" class="loginButton">Entrar</button>
 
       <?php
             //Verifica se existe alguma query string
