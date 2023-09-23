@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "bytemd": "^1.21.0",
+    "semantic": "^0.0.1",
+    "ui": "^0.2.4"
+  }
+}

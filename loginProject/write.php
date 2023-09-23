@@ -4,15 +4,26 @@ require_once("controller/autenticationController.php");
 
 ?>
 <style>
+<<<<<<< HEAD
    
     .container h1 {
         text-align: center;
         color: white;
+=======
+    .container {
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .container h1 {
+        text-align: center;
+>>>>>>> 3cfa888d502b66542fa1cf0f038d3562bb664e45
     }
     form {
         color: white;
     }
     .enviarBlog {
+<<<<<<< HEAD
     background-color: #ce8600;
     color: #fff;
     border: none;
@@ -21,6 +32,10 @@ require_once("controller/autenticationController.php");
     cursor: pointer;
     width: 100%;
   }
+=======
+        background-color: #F1E058;
+    }
+>>>>>>> 3cfa888d502b66542fa1cf0f038d3562bb664e45
 
 </style>
 

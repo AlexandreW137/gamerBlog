@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style> 
+
+deixar o menu centralizado verticalmente com a logo
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            background-color: yellow;
+            
+        }
+
+        header ul {
+            display: flex;
+            list-style: none;
+        }
+   
+       
+
+        header ul li:hover {
+            color: red;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-left: 50px;
+        }
+
+        .menu {
+            margin-top: 50px;
+            width: 100%;
+            height: 100px;
+
+        }
+
+        .menu ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu ul li {
+            margin: 0 10px;
+        }
+
+        .menu ul li:hover {
+            color: red;
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+        }
+
+
+
+
+   
+
+    </style>
+   
+    
+    <header> 
+        <div class="logo">
+            <img src="img/semfundoazul.png" alt="logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Produtos</li>
+                <li>Contato</li>
+            </ul>
+        </div>
+     
+    </header>
+</body>
+</html>
